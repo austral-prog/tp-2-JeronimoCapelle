@@ -4,8 +4,15 @@ def change():
 
     expense = float(input("Ingresar gasto:\n"))
     print(expense)
-    money = float(input("Dinero recibido\n"))
-    print(int(money))
     
-    print
-    print(f"\nVuelto\n\nPesos:\n{int(money - expense)}\nCentavos:\n{int(((money - expense) % 1)*100)}")
+    money = int(input("Dinero recibido\n"))
+    print(f"{money}\n")
+    
+    print("Vuelto\n")
+    
+    print("Pesos:")
+    print(f"{int(money - expense)}")
+    
+
+    print("Centavos:")
+    print(f"{int((( money - expense ) % 1)*100)}")
